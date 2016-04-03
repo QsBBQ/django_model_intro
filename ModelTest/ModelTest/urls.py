@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from ModelTest_app.views import get_contacts
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^contacts/', get_contacts),
 ]

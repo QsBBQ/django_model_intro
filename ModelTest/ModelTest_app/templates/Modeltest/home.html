@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> List of contact </h1>
+        {% block content %}
+          {% for contact in contact_list %}
+            <p>{{ contact.first_name }}</p>
+            <p>{{ contact.last_name }}</p>
+            <p>{{ contact.mobile }}</p>
+            <hr>
+          {% endfor %}
+        {% endblock %}
+    </body>
+</html>
